@@ -3,7 +3,7 @@ terraform {
     bucket         = "reddit-tf-state-nguyentanan"
     region         = "us-east-1"
     key            = "EKS-DevSecOps-Tetris-Project/EKS-TF/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
+    dynamodb_table = "reddit-terraform-lock"
     encrypt        = true
   }
   required_version = ">=0.13.0"
